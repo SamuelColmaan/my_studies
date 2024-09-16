@@ -20,33 +20,10 @@ body, html {
 
 header {
     margin-bottom: 20px; /* Adiciona espaço entre o título e os outros elementos */
-    font-size: 25px;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    
-}
-
-input {
-    padding: 3%;
-}
-
-#btn {
-    margin-left: 5%;
-    padding: 3%;
-}
-
-li {
-    list-style: none;
-}
-
-#lista, #resultado {
-    margin-top: 5%;
-}
-
-.feito {
-    text-decoration: line-through;
-    color: gray; /* Opcional: muda a cor do texto para cinza para indicar que a tarefa foi concluída */
 }
