@@ -1,0 +1,28 @@
+* {
+    margin: 0%;
+}
+
+#bloco {
+    background-color: #000;
+    color: #fff;
+    display: flex; /*Precisa do display flex*/
+    width: 150px;
+    height: 150px;
+    justify-content: center; /*Alinha horizontalmente ao centro */
+    align-items: center; /*Alinha verticalmente ao centro*/
+}
+
+#bloco2 {
+    background-color: #e57803;
+    color: #fff;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
