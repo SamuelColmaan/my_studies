@@ -17,7 +17,6 @@ header {
 }
 
 header > .container {
-    display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
@@ -56,4 +55,21 @@ nav li a {
     background-color: #fff;
     display: block;
     margin-bottom: 8px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 5%;
+}
+
+section {
+    padding: 5% 0%;
+}
+
+section h2 {
+    margin-bottom: 5%;
 }
