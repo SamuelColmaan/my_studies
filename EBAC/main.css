@@ -47,6 +47,7 @@ nav li a {
 
 .menu-hamburguer {
     width: 32px;
+    cursor: pointer;
 }
 
 .menu-hamburguer span {
