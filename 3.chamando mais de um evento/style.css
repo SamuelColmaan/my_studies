@@ -1,9 +1,0 @@
-#bloco {
-    background-color: black;
-    color: white;
-    justify-content: center; /*Alinha horizontalmente ao centro */
-    align-items: center; /*Alinha verticalmente ao centro*/
-    display: flex; /*Precisa do display flex*/
-    height: 150px;
-    width: 150px;
-}
