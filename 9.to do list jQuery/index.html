@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lista de Tarefas</h1>
+        </header>
+
+        <main>
+            <input type="text" id="txt" placeholder="Nome da Tarefa" required>
+            <button id="btn" type="submit" onclick="cadastrar()">Cadastrar</button>
+        </main>
+        <div id="lista" ></div>
+        <li id="resultado"></li>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

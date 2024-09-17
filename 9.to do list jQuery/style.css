@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    align-items: center;     /* Alinha horizontalmente */
+    height: 100vh; /* Faz o container ocupar a altura total da tela */
+    text-align: center;
+    color: black;
+}
+
+header {
+    margin-bottom: 20px; /* Adiciona espaço entre o título e os outros elementos */
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    
+}
+
+input {
+    padding: 3%;
+}
+
+#btn {
+    margin-left: 5%;
+    padding: 3%;
+}
+
+li {
+    list-style: none;
+}
+
+#lista, #resultado {
+    margin-top: 5%;
+}
+
+.feito {
+    text-decoration: line-through;
+    color: gray; /* Opcional: muda a cor do texto para cinza para indicar que a tarefa foi concluída */
+}
