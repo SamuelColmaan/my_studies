@@ -92,7 +92,7 @@ section h2 {
     margin: 16px 0;
 }
 
-.lista-veiculos li button {
+button{
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -118,4 +118,28 @@ section h2 {
 .price del {
     color: #ccc;
     font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+}
+.form-campo label {
+    font-weight: bold;
+    display: block; /* O campo tem display inline por padrão. Qando eu defino para display block ele passa a ocupar uma linha inteira */
+}
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+form {
+    max-width: 360px;
+}
+form button{
+    max-width: 120px;
 }
