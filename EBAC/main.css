@@ -13,6 +13,12 @@ header, footer {
     background-color: #192a56;
     color: #fff;
 }
+header {
+    position: sticky; /* Faz com que o header se comporte como um elemento fixo depois de rolar até a posição especificada */
+    top: 0; /* Define que o header deve ficar colado ao topo do viewport quando se torna fixo */
+    left: 0; /* Define que o header deve estar alinhado à esquerda do viewport */
+    z-index: 1; /* Garante que o header será exibido sobre outros elementos com z-index menor */
+}
 header > .container, 
 footer .container{
     justify-content: space-between;
