@@ -17,6 +17,24 @@ $(document).ready(()=>{
             telefone: {
                 required: true
             },
+            mensagem:{
+                required: true
+            },
+            veiculoInteresse:{
+                required: false
+            }
+        },
+        messages:{
+            nome: 'Por favor, insira o seu nome',
+            email: 'Por favor, insira o seu e-mail',
+            telefone: 'por favor, insira o número de telefone'
+        },
+        submitHandler: (form)=>{
+            console.log(form)
+        },
+        invalidHandler: (evento, validador)=>{
+            let camposIncorretos = validador.numberOfInvalids();
+            console.log(camposIncorretos)
         }
     })
 });
