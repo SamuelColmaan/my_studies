@@ -37,4 +37,10 @@ $(document).ready(()=>{
             console.log(camposIncorretos)
         }
     })
-});
+    $('.lista-veiculos button').click(()=>{
+        const destino = $('#contato');
+        $('html').animate({
+            scrollTop: destino.offset().top
+        }, 1000)
+    })
+}); 
