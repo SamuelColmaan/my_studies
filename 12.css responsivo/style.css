@@ -1,4 +1,9 @@
-    
+/* 1) screen - telas em geral
+2) print - aplica apenas caso alguém vá imprimir 
+3) speech aplica para leitor de tela, reconhecimento por voz da página
+4) all - atinge todos os outros */
+ 
+ 
  /* Ele define uma mídia query que aplicaria um fundo vermelho ao corpo da página quando a largura da tela fosse 664 pixels ou menos. 
 
     @media screen and (max-width: 664px) {
@@ -16,8 +21,19 @@
  } */
 
 /* Mídia query específica para impressão. Quando o usuário tentar imprimir a página, os títulos `<h3>` serão exibidos em vermelho na impressão. */
-/* @media print {
-    h3 {
-        color: red;
+ @media print {
+    h1 {
+        color: green  !important;
     }
- } */
+ } 
+
+h1 {
+    color: red;
+}
+
+@media screen and (max-width: 500px){
+    /* max-width = tela menor que alguma resolução */
+    h1{
+        color: blue;
+    }
+}
