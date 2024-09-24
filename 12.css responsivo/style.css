@@ -30,10 +30,14 @@
 h1 {
     color: red;
 }
-
 @media screen and (max-width: 500px){
     /* max-width = tela menor que alguma resolução */
     h1{
         color: blue;
+    }
+}
+@media (max-width: 700px){
+    h2 {
+        color: yellow;
     }
 }
