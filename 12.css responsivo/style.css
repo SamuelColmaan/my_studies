@@ -1,0 +1,23 @@
+    
+ /* Ele define uma mídia query que aplicaria um fundo vermelho ao corpo da página quando a largura da tela fosse 664 pixels ou menos. 
+
+    @media screen and (max-width: 664px) {
+        body{
+            background-color: red;
+        }
+    }  */
+
+
+/* Mídia query que aplica o fundo vermelho ao corpo da página quando a orientação do dispositivo for retrato (portrait) e a largura da tela for de 640 pixels ou menos. Isso significa que em dispositivos móveis com telas pequenas, que estão sendo segurados na vertical, o fundo ficará vermelho. */
+ /* @media screen and (orientation: portrait) and (max-width: 640px) {
+    body{
+        background-color: red;
+    }
+ } */
+
+/* Mídia query específica para impressão. Quando o usuário tentar imprimir a página, os títulos `<h3>` serão exibidos em vermelho na impressão. */
+/* @media print {
+    h3 {
+        color: red;
+    }
+ } */
