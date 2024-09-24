@@ -4,6 +4,7 @@
 4) all - atinge todos os outros 
 5) mobile first - o design é feito primeiro para mobile */
 /* 6) and - Trabalha com intervalos */
+/* 7) orientation (landscape) = horizontal x portrait (vertical)- trabalho com a orientação do dispositivo */
  
  
  /* Ele define uma mídia query que aplicaria um fundo vermelho ao corpo da página quando a largura da tela fosse 664 pixels ou menos. 
@@ -54,10 +55,17 @@
         color: teal;
     }
 }
+/* 6 - and */
 @media (min-width: 300px) and (max-width: 400px){
     /* min-width: 300px: Os estilos serão aplicados quando a tela tiver 300 pixels ou mais de largura. */
     /* max-width: 400px: Ao mesmo tempo, os estilos só serão aplicados quando a tela tiver 400 pixels ou menos de largura. */
     h4{
         font-size: 3em;
+    }
+}
+/* 7 - orientation */
+@media (orientation: landscape /*horizontal*/ ){
+    h3{
+        color: black;
     }
 }
