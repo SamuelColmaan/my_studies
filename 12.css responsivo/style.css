@@ -1,7 +1,8 @@
 /* 1) screen - telas em geral
 2) print - aplica apenas caso alguém vá imprimir 
 3) speech aplica para leitor de tela, reconhecimento por voz da página
-4) all - atinge todos os outros */
+4) all - atinge todos os outros 
+5) mobile first - o design é feito primeiro para mobile */
  
  
  /* Ele define uma mídia query que aplicaria um fundo vermelho ao corpo da página quando a largura da tela fosse 664 pixels ou menos. 
@@ -21,23 +22,34 @@
  } */
 
 /* Mídia query específica para impressão. Quando o usuário tentar imprimir a página, os títulos `<h3>` serão exibidos em vermelho na impressão. */
- @media print {
+/* 2 - print */
+@media print {
     h1 {
         color: green  !important;
     }
  } 
 
-h1 {
+* {
     color: red;
 }
+/* 1 - screen */
 @media screen and (max-width: 500px){
     /* max-width = tela menor que alguma resolução */
     h1{
         color: blue;
     }
 }
+/* 4 - all (default) */
 @media (max-width: 700px){
     h2 {
         color: yellow;
+    }
+}
+/* 5 - mobile first */
+/* min-width > max-width */
+/* min-width = Tela maior que alguma coisa */
+@media (min-width: 200px){
+    h3{
+        color: teal;
     }
 }
