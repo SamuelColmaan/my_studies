@@ -18,6 +18,9 @@
 				<button type="submit">Pesquisar</button>
 			</form>
 		</div>
+		<div class="botao-menu" >
+			<button type="button" >Abrir menu</button>
+		</div>
 	<nav class="container">
 		<ul class="menu">
 			<li>
@@ -117,9 +120,16 @@
 			</section>
 		</aside>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
-
-
-  
+<script>
+	// Isso daqui cria uma resposta ao botao de abrir menu
+	$(document).ready(function(){
+		$('.botao-menu button').click(function(){
+			// O slide faz o menu (conteudo que tiver) aparecer lentamenete
+			$('.menu').slideToggle()
+		})
+	})
+</script>
 </html>
 

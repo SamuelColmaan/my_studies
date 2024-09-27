@@ -59,8 +59,6 @@ header{
 .noticia img{
     max-width: 100%;
 }
-
-
 .destaque{
     margin-bottom: 56px;
 }
@@ -85,4 +83,81 @@ aside .noticia{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1%;
     row-gap: 5%;
+}
+@media screen and (max-width: 767px){
+    /* Joga pra baixo a parte de novidades */
+    .conteudo{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+    .destaque{
+        margin-bottom: 56px;
+    }
+    /* Jogou pra baixo o h2 do em destaque */
+    .destaque .noticia a{
+        display: block;
+        font-size: 1.5em;
+    }
+    .destaque .noticia img{
+        margin-right: 0px;
+    }
+    /* Deixa na horizontal as últimas notícias */
+    .noticias{
+        display: block;
+    }
+    .noticia .noticia{
+        margin-bottom: 32px;
+    }
+    aside{
+        padding-left: 0px;
+    }
+    /* Esse header .container faz com que o título se alinha em coluna. O padrão é em linha */
+    header div.container{
+        flex-direction: column;
+    }
+    .submenu{
+        display: block;
+        position: relative; /*Isso faz com que cada item do menu ocupe o seu espaço */
+        border: none;
+    }
+    .menu{
+        display: none;
+    }
+    .menu > li {
+        clear: both;
+    }
+    .submenu li{
+        display: block;
+        padding: 8px;
+    }
+    .botao-menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+    .botao-menu button{
+        padding: 8px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+    .botao-menu{
+        display: none;
+    }
+    .destaque .noticia a{
+        font-size: 1.5em;
+    } 
+    .noticias{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .botao-menu{
+        display: none;
+    }
 }
