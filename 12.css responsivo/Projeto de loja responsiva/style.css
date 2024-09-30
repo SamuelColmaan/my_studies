@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1%;
+}
+header{
+    padding: 16px 0 0;
+    /* border-bottom: 1px solid #ccc; Com isso eu crio uma linha. Importante lá na frente */
+    background-color: rgba(0, 0, 0, 0.783);
+    color: white;
+}
+.conteudo-header {
+    list-style: none;
+    display: flex;
+}
+.conteudo-header li{
+    margin-left: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.conteudo-header li:hover{
+    color: #9500da;
+
+}
