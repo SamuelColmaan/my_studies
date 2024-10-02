@@ -44,9 +44,14 @@ header{
 .sobre_a_loja{
     margin-top: 30px;
 }
+.milagre{
+    border-top: 1px solid #000000c8;
+    max-width: 98%;
+    color: black;
+}
+
 .sobre{
     display: flex;
-    
 }
 .sobre a{
     display: flex;
@@ -79,14 +84,13 @@ header{
     text-decoration: none;
     color: black;
 }
-.produto .p-produto{
+.produto .ajuste .p-produto{
     font-size: 13px;
 }
 .produtos{
     border-top: 1px solid #000000c8;
     padding-top: 15px;
-    max-width: 80.5%;
-    
+    max-width: 100;
 }
 .btn{
     background-color: #000000c8;
@@ -117,4 +121,17 @@ header{
         flex-direction: column; 
         text-align: center; 
     }
+    .conteudo{
+        display: grid;
+    }
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 0.2fr);
+        column-gap: 1%;
+        row-gap: 5%;
+        justify-content: center; 
+        flex-direction: column; 
+        text-align: center;
+    }
+    
 }
