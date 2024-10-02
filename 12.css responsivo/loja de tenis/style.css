@@ -56,3 +56,36 @@ header{
 .sobre a{
     text-decoration: none;
 }
+.noticia img{
+    max-width: 100%;
+}
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 0.2fr);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+.seção_produtos h2 {
+    margin: 30px 0px 15px 0px ;
+}
+.produto a{
+    text-decoration: none;
+    color: black;
+}
+.produto .p-produto{
+    font-size: 13px;
+}
+.produtos{
+    border-top: 1px solid #000000c8;
+    padding-top: 15px;
+    max-width: 80.5%;
+    
+}
+.btn{
+    background-color: #000000c8;
+    color: #fff;
+    border-radius: 3px;
+    padding: 4px;
+    font-style: italic;
+    margin-top: 5px;
+}
