@@ -17,8 +17,11 @@ header .container {
 header{
     padding: 16px 0 0;
     /* border-bottom: 1px solid #ccc; Com isso eu crio uma linha. Importante lá na frente */
-    background-color: rgba(0, 0, 0, 0.783);
+    background-color: #000000c8;
     color: white;
+}
+.conteudo{
+    display: grid;
 }
 .conteudo-header {
     list-style: none;
@@ -31,5 +34,25 @@ header{
 }
 .conteudo-header li:hover{
     color: #9500da;
-
+}
+.sobre img{
+    margin-right: 10px;
+    max-width: 100%;
+}
+.sobre_a_loja{
+    margin-top: 30px;
+}
+.sobre{
+    display: flex;
+}
+.sobre a{
+    display: flex;
+    font-size: 1.5em;
+}
+.sobre_a_loja h2{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #000000c8;
+}
+.sobre a{
+    text-decoration: none;
 }
