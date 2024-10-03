@@ -20,9 +20,6 @@ header{
     background-color: #000000c8;
     color: white;
 }
-.conteudo{
-    display: grid;
-}
 .conteudo-header {
     list-style: none;
     display: flex;
@@ -38,7 +35,6 @@ header{
 }
 .sobre img{
     margin-right: 10px;
-    max-width: 100%;
 }
 
 .sobre_a_loja{
@@ -46,12 +42,7 @@ header{
 }
 .milagre{
     border-top: 1px solid #000000c8;
-    max-width: 98%;
     color: black;
-}
-
-.sobre{
-    display: flex;
 }
 .sobre a{
     display: flex;
@@ -59,17 +50,9 @@ header{
 }
 .sobre_a_loja h2{
     margin-bottom: 15px;
-    display: flex;
-}
-.linha{
-    display: flex;
 }
 .sobre a{
     text-decoration: none;
-
-}
-.noticia img{
-    max-width: 100%;
 }
 .produtos{
     display: grid;
@@ -100,7 +83,11 @@ header{
     font-style: italic;
     margin-top: 5px;
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+.produtos{
+    justify-content: center; 
+    text-align: center; 
+}
+@media screen and (min-width: 641px) and (max-width: 1023px) {
     header {
     font-size: 14px;
     }
@@ -124,6 +111,12 @@ header{
     .conteudo{
         display: grid;
     }
+    .container h1{
+        margin-left: 5%;
+    }
+    .conteudo h2{
+        text-align: left;
+    }
     .produtos{
         display: grid;
         grid-template-columns: repeat(2, 0.2fr);
@@ -134,4 +127,42 @@ header{
         text-align: center;
     }
     
+}
+@media screen and (max-width:640px) {
+    header {
+        font-size: 11px;
+        }
+        header li{
+            margin-right: 15px;
+        }
+        .sobre_a_loja img{
+            margin-bottom: 30px;
+        }
+        .sobre_a_loja .sobre a {
+            display: block;
+            font-size: 15px;
+            max-width: 100%;
+        }
+        .sobre {
+            display: flex;
+            justify-content: center; 
+            flex-direction: column; 
+            text-align: center; 
+        }
+        .produtos{
+            display: grid;
+            grid-template-columns: repeat(1, 0fr);
+            column-gap: 1%;
+            row-gap: 5%;
+            justify-content: center; 
+            flex-direction: column; 
+            text-align: center;
+        }
+        .container h1{
+            margin-left: 5%;
+        }
+        .conteudo h2{
+            text-align: left;
+        }
+        
 }
