@@ -1,30 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colman Agency</title>
-    <!-- Fonte -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8, permitindo o uso de caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz com que a página seja responsiva, ajustando-se à largura do dispositivo -->
+    <title>Colman Agency</title> <!-- Define o título da página que aparecerá na aba do navegador -->
+    
+    <!-- Fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet"> <!-- Importa a fonte Roboto com diferentes espessuras de texto -->
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> <!-- Importa o CSS do Bootstrap para layout e componentes pré-prontos -->
+    
+    <!-- Arquivo de estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Conecta o arquivo CSS local para estilos personalizados -->
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Importa o jQuery para manipulação simplificada de DOM e AJAX -->
+    
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/1cc5782033.js" crossorigin="anonymous"></script>git 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> <!-- Popper.js, usado para posicionamento de elementos, principalmente em dropdowns e tooltips do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> <!-- JS do Bootstrap, que habilita funcionalidades como modais, colapsos, etc. -->
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1cc5782033.js" crossorigin="anonymous"></script> <!-- Importa ícones do Font Awesome para uso na página -->
+
     <!-- Progress bar -->
-     <script src="js/progressbar.min.js"></script>
-     <!-- Paralax -->
-     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="js/progressbar.min.js"></script> <!-- Importa um script de barra de progresso customizada -->
+
+    <!-- Paralax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> <!-- Biblioteca Parallax.js, que cria efeitos de parallax no scroll da página -->
 </head>
 <body>
     <header>
-        <h1>Hello, world</h1>
+        <div class="container" id="nav-Scontainer"> <!-- Container Bootstrap para centralizar o conteúdo da navegação -->
+            <nav class="navbar navbar-expand-lg fixed"> <!-- Barra de navegação Bootstrap com expansão para telas grandes e fixação no topo -->
+                <a href="#" class="navbar-brand"> <!-- Link para a homepage com o logo -->
+                    <img id="logo" src="img/hdcagency_logo.svg" alt="Colman agency">Colman agency <!-- Imagem do logo da agência e texto -->
+                </a>
+                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigations">
+                    <span class="navbar-toggler-icon"></span> <!-- Botão de colapso para navegação em telas pequenas -->
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links"> <!-- Div colapsável para links de navegação -->
+                    <div class="navbar-nav"> <!-- Menu de navegação com links -->
+                        <a class="nav-item nav-link" id="home-menu">Home</a> <!-- Link para a seção "Home", com estilo de item de navegação -->
+                        <a class="nav-item nav-link" id="about-menu">A agência</a> <!-- Link para a seção "A agência", estilizado como item de navegação -->
+                        <a class="nav-item nav-link" id="services-menu">Serviços</a> <!-- Link para a seção "Serviços", estilizado como item de navegação -->
+                        <a class="nav-item nav-link" id="team-menu">Time</a> <!-- Link para a seção "Time", estilizado como item de navegação -->
+                        <a class="nav-item nav-link" id="portfolio-menu">Projetos</a> <!-- Link para a seção "Projetos", estilizado como item de navegação -->
+                        <a class="nav-item nav-link" id="contact-menu">Contato</a> <!-- Link para a seção "Contato", estilizado como item de navegação -->
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <script src="js/scripts.js"></script>
+    <!-- Script JavaScript personalizado -->
+    <script src="js/scripts.js"></script> <!-- Conecta o arquivo de scripts JavaScript personalizado da página -->
 </body>
 </html>
