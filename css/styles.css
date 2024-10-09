@@ -1,0 +1,45 @@
+/* Gerais */
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte do corpo da página como 'Roboto' e usa sans-serif como fallback */
+    color: black; /* Define a cor do texto principal como preto */
+}
+
+.row {
+    margin: 0; /* Remove a margem padrão do elemento 'row' */
+}
+
+p, li {
+    color: #444; /* Define a cor do texto de parágrafos e listas como um tom de cinza escuro */
+    font-size: 14px; /* Define o tamanho da fonte para parágrafos e itens de lista como 14 pixels */
+}
+
+/* Barra de navegação */
+header, .navbar {
+    background-color: #353D41; /* Define a cor de fundo do header e da navbar como um tom escuro de cinza */
+}
+
+#nav-container {
+    padding-top: 0; /* Remove o preenchimento superior do contêiner da navbar */
+    padding-bottom: 0; /* Remove o preenchimento inferior do contêiner da navbar */
+}
+
+#logo {
+    width: 75px; /* Define a largura do logo para 75 pixels */
+}
+
+.navbar-brand {
+    padding: 0; /* Remove o preenchimento da marca da navbar */
+    color: #fff; /* Define a cor do texto da marca da navbar como branco */
+}
+
+.navbar-brand:hover {
+    color: #fff; /* Define a cor do texto da marca da navbar como branco ao passar o mouse sobre ele */
+}
+
+#navbar-links a {
+    color: white; /* Define a cor dos links dentro da navbar como branco */
+}
+
+.navbar-expand-lg .navbar-nav .nav-links {
+    padding: 1rem .8rem; /* Define o preenchimento dos itens de navegação na navbar expansível como 1rem em cima e embaixo, e 0.8rem nas laterais */
+}
