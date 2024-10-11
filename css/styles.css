@@ -92,3 +92,49 @@ header, .navbar {
 .carousel-indicators .active {
     background-color: #65DAF9; /* Define a cor de fundo do indicador ativo do carousel */
 }
+/* Seção about */
+#about-area { 
+    background-color: #F9F9F9; /* Define a cor de fundo da seção "about" como um cinza claro */
+}
+
+.main-title {
+    color: #444; /* Define a cor do texto do título principal como um cinza escuro */
+    margin: 0px 0 65px 0; /* Define a margem: 0 acima, 0 à direita, 65px abaixo e 0 à esquerda */
+    font-size: 40px; /* Define o tamanho da fonte do título principal */
+    text-align: center; /* Centraliza o texto do título na seção */
+    position: relative; /* Define o contexto para posicionamento dos elementos filhos (a barra embaixo do título) */
+}
+
+.main-title::after {
+    content: ""; /* Cria um elemento pseudo que não possui conteúdo visível */
+    border-top: 2px solid #333; /* Cria uma linha em cima do elemento pseudo com 2px de espessura e cor cinza escuro */
+    width: 15%; /* Define a largura da linha como 15% da largura do elemento pai */
+    position: absolute; /* Permite posicionar a linha em relação ao elemento pai (a classe "main-title") */
+    top: 60px; /* Posiciona a linha 60px abaixo do topo do elemento pai */
+    left: 42.5%; /* Posiciona a linha 42.5% da largura do elemento pai, centralizando-a horizontalmente */
+}
+
+#bugado {
+    margin-top: 20px; /* Adiciona uma margem superior de 20px ao elemento com ID "bugado" */
+}
+
+.about-title {
+    font-size: 17px; /* Define o tamanho da fonte do subtítulo */
+    color: #444; /* Define a cor do texto do subtítulo como um cinza escuro */
+    text-transform: uppercase; /* Transforma o texto do subtítulo para letras maiúsculas */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+}
+
+.about-list {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding-left: 0; /* Remove o preenchimento à esquerda da lista */
+}
+
+.about-list li {
+    line-height: 30px; /* Define a altura da linha dos itens da lista para melhorar a legibilidade */
+}
+
+.about-list i {
+    color: #65DAF9; /* Define a cor dos ícones da lista como um azul claro */
+    margin-right: 15px; /* Adiciona uma margem à direita dos ícones para espaçamento em relação ao texto */
+}
