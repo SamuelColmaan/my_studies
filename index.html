@@ -48,11 +48,123 @@
                         <a class="nav-item nav-link" id="team-menu">Time</a> <!-- Link para a seção "Time", estilizado como item de navegação -->
                         <a class="nav-item nav-link" id="portfolio-menu">Projetos</a> <!-- Link para a seção "Projetos", estilizado como item de navegação -->
                         <a class="nav-item nav-link" id="contact-menu">Contato</a> <!-- Link para a seção "Contato", estilizado como item de navegação -->
+                        
                     </div>
                 </div>
             </nav>
         </div>
     </header>
+    <main>
+        <!-- A área principal do conteúdo da página -->
+        <div class="container-fluid">
+            <!-- 
+            Um contêiner fluido que ocupa 100% da largura da tela.
+            A classe "container-fluid" do Bootstrap é utilizada para criar um contêiner que se adapta à largura da tela.
+            -->
+    
+            <div id="minSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <!-- 
+                Carrossel de slides:
+                - id="minSlider": define o identificador do carrossel, usado para referenciar o componente.
+                - class="carousel slide": aplica o estilo de carrossel e as funcionalidades de transição de slides.
+                - data-bs-ride="carousel": inicia o carrossel automaticamente ao carregar a página.
+                - data-bs-interval="3000": define o intervalo entre os slides, em milissegundos (3 segundos).
+                -->
+                
+                <!-- Indicadores do carrossel (comentados no momento) -->
+                <!-- 
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#minSlider" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#minSlider" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#minSlider" data-bs-slide-to="2"></li>
+                </ol>
+                -->
+                <!-- 
+                Os indicadores são pequenos pontos que mostram a posição atual do carrossel. 
+                "data-bs-target": aponta para o carrossel correspondente.
+                "data-bs-slide-to": define qual slide será exibido quando o indicador for clicado.
+                "class='active'": indica que esse é o slide atual.
+                -->
+    
+                <div class="carousel-inner">
+                    <!--
+                    O contêiner interno do carrossel, onde os slides individuais são definidos.
+                    A classe "carousel-inner" contém todos os slides do carrossel.
+                    -->
+                    
+                    <div class="carousel-item active">
+                        <!-- 
+                        O primeiro slide, com a classe "active" para indicar que é o slide inicial.
+                        A classe "carousel-item" é usada para identificar cada item do carrossel.
+                        -->
+                        <img src="img/banner1.png" class="d-block w-100" alt="Projetos de e-comerce">
+                        <!--
+                        Imagem do banner, com as classes:
+                        - d-block: define que o elemento é exibido como bloco (ocupa toda a largura disponível).
+                        - w-100: define que a imagem ocupa 100% da largura do contêiner pai.
+                        - alt: descrição da imagem para acessibilidade, importante para usuários de leitores de tela.
+                        -->
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <!--
+                            Texto sobreposto ao slide:
+                            - d-none: esconde o texto em todas as telas pequenas.
+                            - d-md-block: exibe o texto em telas médias (≥768px) e maiores.
+                            Isso permite que o texto seja mostrado apenas em dispositivos que têm espaço suficiente.
+                            -->
+                            
+                            <h2>Quer criar um e-commerce?</h2>
+                            <p>Conte conosco, temos mais de 30 lojas no portfólio</p>
+                            <a href="#" class="main-btn">Ver portfólio</a>
+                            <!-- 
+                            Link com botão que redireciona para ver o portfólio.
+                            "main-btn": classe personalizada que pode ser estilizada em CSS para se comportar como um botão.
+                            -->
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <!-- O segundo slide -->
+                        <img src="img/banner3.png" class="d-block w-100" alt="Manutenção em software">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Está buscando manutenção no seu software?</h2>
+                            <p>Temos engenheiros qualificados</p>
+                            <a href="#" id="btn-bugado" class="main-btn">Entrar em contato</a>
+                            <!-- Botão para entrar em contato -->
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <!-- O terceiro slide -->
+                        <img src="img/banner2.png" class="d-block w-100" alt="Engenharia de software">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Está querendo tirar o projeto do papel?</h2>
+                            <p>Nossa equipe de engenharia está pronta para lhe atender</p>
+                            <a href="#" class="main-btn">Entrar em contato</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Botão para navegar para o slide anterior -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#minSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <!-- Ícone de seta para indicar a direção, usando a classe "carousel-control-prev-icon" que aplica o estilo padrão do Bootstrap. -->
+                    <span class="visually-hidden">Previous</span>
+                    <!-- Texto acessível apenas por leitores de tela. O conteúdo visível "Previous" é ocultado para usuários que não usam leitores de tela. -->
+                </button>
+    
+                <!-- Botão para navegar para o próximo slide -->
+                <button class="carousel-control-next" type="button" data-bs-target="#minSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <!-- Ícone de seta para indicar a direção, usando a classe "carousel-control-next-icon". -->
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    
+    
+    
 
     <!-- Script JavaScript personalizado -->
     <script src="js/scripts.js"></script> <!-- Conecta o arquivo de scripts JavaScript personalizado da página -->
