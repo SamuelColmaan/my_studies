@@ -43,3 +43,52 @@ header, .navbar {
 .navbar-expand-lg .navbar-nav .nav-links {
     padding: 1rem .8rem; /* Define o preenchimento dos itens de navegação na navbar expansível como 1rem em cima e embaixo, e 0.8rem nas laterais */
 }
+/*--------------------------Slider---------------------------*/
+.container-fluid {
+    padding: 0; /* Remove o padding padrão da classe container-fluid para que o slider ocupe toda a largura da tela */
+}
+
+#minSlider .carousel-inner, #minSlider .carousel-item {
+    height: 32rem; /* Define a altura dos itens do carousel para 32rem, garantindo que todos tenham a mesma altura */
+}
+
+#minSlider .carousel-caption {
+    top: 30%; /* Posiciona a legenda do carousel 30% a partir do topo do container */
+}
+
+#minSlider .carousel-caption h2 {
+    font-size: 50px; /* Define o tamanho da fonte do título da legenda */
+    margin-bottom: 30px; /* Adiciona uma margem inferior de 30px para espaçamento entre o título e outros elementos */
+}
+
+#minSlider .carousel-caption p {
+    font-size: 22px; /* Define o tamanho da fonte do parágrafo na legenda */
+    font-weight: 300; /* Define o peso da fonte como leve para um visual mais suave */
+    margin-bottom: 100px; /* Adiciona uma margem inferior de 100px para espaçamento */
+    color: #FFF; /* Define a cor do texto como branco */
+}
+
+/* Botão Principal */
+.main-btn {
+    background-color: #65DAF9; /* Define a cor de fundo do botão */
+    color: #FFF; /* Define a cor do texto do botão como branco */
+    text-transform: uppercase; /* Transforma o texto do botão em letras maiúsculas */
+    width: 200px; /* Define a largura do botão */
+    height: 60px; /* Define a altura do botão */
+    padding: 10px 20px; /* Adiciona um padding de 10px em cima e embaixo e 20px nas laterais */
+    border-radius: 30px; /* Define bordas arredondadas com um raio de 30px */
+    border: 3px solid transparent; /* Define uma borda de 3px, inicialmente transparente */
+    transition: .5s; /* Define uma transição suave de 0.5 segundos para mudanças de estado */
+    text-decoration: none; /* Remove o sublinhado do texto */
+}
+
+.main-btn:hover {
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    color: #FFF; /* Mantém a cor do texto como branco */
+    background-color: transparent; /* Torna o fundo do botão transparente ao passar o mouse */
+    border-color: #65DAF9; /* Altera a cor da borda para a mesma cor de fundo original do botão */
+}
+
+.carousel-indicators .active {
+    background-color: #65DAF9; /* Define a cor de fundo do indicador ativo do carousel */
+}
