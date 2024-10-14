@@ -180,4 +180,11 @@ header, .navbar {
     color: #FFF;
     text-align: center;
     font-size: 26px;
+    margin-top: 20px;
+}
+#circleA, 
+#circleB, 
+#circleC, 
+#circleD {
+    height: 120%;
 }
