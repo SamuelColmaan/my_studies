@@ -13,7 +13,7 @@ p, li {
     font-size: 14px; /* Define o tamanho da fonte para parágrafos e itens de lista como 14 pixels */
 }
 
-/* Barra de navegação */
+/* -------------------- Barra de navegação --------------------*/
 header, .navbar {
     background-color: #353D41; /* Define a cor de fundo do header e da navbar como um tom escuro de cinza */
 }
@@ -43,6 +43,14 @@ header, .navbar {
 .navbar-expand-lg .navbar-nav .nav-links {
     padding: 1rem .8rem; /* Define o preenchimento dos itens de navegação na navbar expansível como 1rem em cima e embaixo, e 0.8rem nas laterais */
 }
+#nav-Scontainer{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* garante que o header esteja acima dos outros elementos */
+}
+
 /*--------------------------Slider---------------------------*/
 .container-fluid {
     padding: 0; /* Remove o padding padrão da classe container-fluid para que o slider ocupe toda a largura da tela */
@@ -137,4 +145,39 @@ header, .navbar {
 .about-list i {
     color: #65DAF9; /* Define a cor dos ícones da lista como um azul claro */
     margin-right: 15px; /* Adiciona uma margem à direita dos ícones para espaçamento em relação ao texto */
+}
+
+/* ---------------------- Serviços ------------------------------- */
+.service-box{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.service-box i, .service-box h4{
+    transition: .5s;
+}
+.service-box i{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #444;
+}
+.service-box h4{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.service-box:hover > i, .service-box:hover h4{
+    color: #65DAF9;
+}
+
+/* Dados */
+.circle-box div{
+    padding: 0 40px;
+}
+.progressbar-text{
+    font-weight: bold;
+    font-size: 32px;
+}
+#data-area p{
+    color: #FFF;
+    text-align: center;
+    font-size: 26px;
 }
