@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* Utilização de variáveis */
+/* Utilização de aninhamento de estilos */
+header, .contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  /* Utilização de hover */
+}
+header button, .contato button {
+  background-color: blue;
+  color: white;
+}
+header:hover, .contato:hover {
+  background-color: rgb(145, 145, 145);
+  display: block;
+}
+
+p {
+  display: block;
+}
+
+h2 {
+  background-color: blue;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}/*# sourceMappingURL=index.css.map */

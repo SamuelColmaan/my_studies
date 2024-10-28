@@ -1,0 +1,14 @@
+@import './variaveis';
+@import './header';
+
+p {
+    display: block;
+}
+
+h2 {
+    background-color: $third;
+}
+.contato{
+    @include flexCenter();
+    @extend header
+}

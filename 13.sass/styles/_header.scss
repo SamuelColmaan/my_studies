@@ -1,0 +1,24 @@
+@mixin flexCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Utilização de aninhamento de estilos */
+header {
+    @include flexCenter();
+    background-color: $primary;
+    color: white;
+
+    button {
+        background-color: $third;
+        color: white;
+    }
+        /* Utilização de hover */
+
+        &:hover{
+            background-color: rgb(145, 145, 145);    
+            display: block;
+        }
+}
